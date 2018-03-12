@@ -19,7 +19,7 @@ java_library {
     hostdex: true,
     no_framework_libs: true,
     srcs: ["src/main/java/**/*.java"],
-    include_srcs: true,
+    java_resource_dirs: ["src/main/java"],
     errorprone: {
         javacflags: ["-Xep:MissingOverride:OFF"],
     },
